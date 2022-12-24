@@ -80,4 +80,4 @@ This project was my first exposure to PHP and I grew immensely from the start of
 ## Author
 
 - Website - [aidanw.me](https://aidanw.me/)
-- Linkedin - [doinby](https://www.linkedin.com/in/aidanwitherow/)
+- Linkedin - [Aidan Witherow](https://www.linkedin.com/in/aidanwitherow/)
