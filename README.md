@@ -29,7 +29,7 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
  
  ### Demo
 
-- ![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
+- ![](https://github.com/aidanwith/Currency-Converter/blob/main/Test.gif)
 
 ### Links
 
