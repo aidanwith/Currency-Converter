@@ -5,8 +5,9 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
 ## Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [Features](#features)
   - [Demo](#demo)
+  - [The challenge](#the-challenge)
   - [Links](#links)
   <!-- - [My process](#my-process)
   - [Built With](#built-with)
@@ -26,13 +27,9 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
  - See the result calculated in real-time as input is entered
  - Swap top and bottom currencies using `switch` button
  
- ### Screenshot
+ ### Demo
 
-- Desktop: </br>
-![Desktop](./public//images/screenshot-desktop.png)
-
-- Mobile: </br>
-![Mobile](./public//images/screenshot-mobile.png)
+- ![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
 
 ### Links
 
