@@ -1,14 +1,14 @@
 # Currency-Converter
 
-Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to update the most current rate on the market. Featuring 160 common currencies, automatically updates new changes, and switching places between 2 currencies  
+Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to update the most current conversion rates on the market. Features an extensive library of currencies, real time exchange updates, and a user-friendly UI  
 
 ## Table of Contents
 
 - [Overview](#overview)
   - [Features](#features)
   - [Demo](#demo)
-  - [The challenge](#the-challenge)
   - [Links](#links)
+  - [The challenge](#the-challenge)
   <!-- - [My process](#my-process)
   - [Built With](#built-with)
   - [What I Learned](#what-i-learned)
@@ -35,6 +35,9 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
 
 - Live Site URL: [https://insertlinkhere/](https://insertlinkhere/)
 
+### The Challenge
+The main challenge I had with this project was configuring the API to seamlessly integrate with the other elements of the project. Once I developed the initial version of the converter with HTML, CSS, and JavaScript I realised that my API key would be available for everyone on the internet to see. I knew that I needed to obfuscate my API key to ensure that sensitive information would be kept out of the eyes of those looking to take advantage. I was stuck between Django, Node.js, and PHP as potential solutions to ensure the security of the converter. I chose to work in PHP as I wanted to get more exposure to a very common server-side language present in many real-world applications. 
+
 ## My process
 
 ### Built with
@@ -45,24 +48,36 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+My first exposure to PHP was an incredible learning experience for me. Primarily using C#, JavaScript, and Python in my university programming courses I felt very unprepared starting this project. The issue I faced was getting the exchange rates from the API and integrating them with the rest of the project. At first, I was getting too much data from the API when I ran the program. After setting what information I wanted to get from the API, like the currency the user was coming from and the currency they wanted to convert to, I was able to fully integrate the API using PHP. I also had to learn to use Apache Web Server to debug and test my project during the development process as my previous experience has been mostly with command line applications. 
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<button onclick="callRequestConversion()" type="submit">Convert</button>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: #2175dc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
+function loadFlag(element){
+    for(code in country_list){
+        if(code == element.value){
+            let imgTag = element.parentElement.querySelector("img");
+            imgTag.src = `https://hatscripts.github.io/circle-flags/flags/${country_list[code].toLowerCase()}.svg`;
+            console.log(country_list[code].toLowerCase());
+        }
+    }
+}
 ```
 
 ### Continued development
