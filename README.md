@@ -11,7 +11,7 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
   - [The challenge](#the-challenge)
 - [My Process](#my-process)
   - [Built With](#built-with)
-- [What I Learned](#what-i-learned)
+  - [What I Learned](#what-i-learned)
   - [Continued Development](#continued-development)
   - [Useful Resources](#useful-resources)
 - [Author](#author)
