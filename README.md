@@ -78,7 +78,7 @@ function loadFlag(element){
 }
 ```
 
-### Continued development
+### Continued Development
 
 I aim to include a graph of current conversion rates based on user selection. The challenge will be to not only find or create a reliable API but also to include a graph that is aesthetically pleasing in design, integrates well with the existing layout and also conveys enough information to be useful to users. 
 
