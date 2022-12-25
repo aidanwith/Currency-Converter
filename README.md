@@ -9,11 +9,11 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
   - [Demo](#demo)
   - [Links](#links)
   - [The challenge](#the-challenge)
-  <!-- - [My process](#my-process)
+  [My process](#my-process)
   - [Built With](#built-with)
   - [What I Learned](#what-i-learned)
   - [Continued Development)(#continued-development)
-  - [Useful resources](#useful-resources) -->
+  - [Useful resources](#useful-resources)
 - [Author](#author)
  
  ## Overview
@@ -23,9 +23,9 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
  Users should be able to:
  
  - Choose from 160 available currencies
- - Enter a number at the top `input` and receive a result at the bottom input
+ - Enter a number at the top `Enter Amount` and receive a result at the bottom input
  - See the result calculated in real-time as input is entered
- - Swap top and bottom currencies using `switch` button
+ - Swap top and bottom currencies using `switch` icon
  
  ### Demo
 
@@ -49,8 +49,6 @@ The main challenge I had with this project was configuring the API to seamlessly
 ### What I learned
 
 My first exposure to PHP was an incredible learning experience for me. Primarily using C#, JavaScript, and Python in my university programming courses I felt very unprepared starting this project. The issue I faced was getting the exchange rates from the API and integrating them with the rest of the project. At first, I was getting too much data from the API when I ran the program. After setting what information I wanted to get from the API, like the currency the user was coming from and the currency they wanted to convert to, I was able to fully integrate the API using PHP. I also had to learn to use Apache Web Server to debug and test my project during the development process as my previous experience has been mostly with command line applications. 
-
-To see how you can add code snippets, see below:
 
 ```html
 <button onclick="callRequestConversion()" type="submit">Convert</button>
@@ -82,12 +80,12 @@ function loadFlag(element){
 
 ### Continued development
 
-This project was my first exposure to PHP and I grew immensely from the start of the project to the end. I aim to continue exposing myself to PHP to improve.
+I aim to include a graph of current conversion rates based on user selection. The challenge will be to not only find or create a reliable API but also to include a graph that is aesthetically pleasing in design, integrates well with the existing layout and also conveys enough information to be useful to users. 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [API Help](https://stackoverflow.com/a/9802886) - This resource helped to call the API to start reading in data.
+- [Install XAMPP on Mac](https://medium.com/analytics-vidhya/download-and-install-xampp-on-mac-oshow-to-download-and-install-xampp-on-mac-os-97705974080d) - This is an amazing article which helped me understand how to run an apache web server locally. While this article wasn't the most challenging or mentally stimulating part of the project, I'd recommend at least skimming through it for anyone who has not had prior experience with running a web server or running anything that isn't hosted locally.
 
 ## Author
 
