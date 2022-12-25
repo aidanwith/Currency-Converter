@@ -9,11 +9,11 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
   - [Demo](#demo)
   - [Links](#links)
 - [The challenge](#the-challenge)
-  - [My process](#my-process)
+  - [My Process](#my-process)
   - [Built With](#built-with)
 - [What I Learned](#what-i-learned)
   - [Continued Development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Useful Resources](#useful-resources)
 - [Author](#author)
  
  ## Overview
