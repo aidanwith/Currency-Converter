@@ -45,38 +45,12 @@ The main challenge I had with this project was configuring the API to seamlessly
 - HTML5 markup
 - CSS
 - PHP
+- JavaScript
 
 ### What I learned
 
 My first exposure to PHP was an incredible learning experience for me. Primarily using C#, JavaScript, and Python in my university programming courses I felt very unprepared starting this project. The issue I faced was getting the exchange rates from the API and integrating them with the rest of the project. At first, I was getting too much data from the API when I ran the program. After setting what information I wanted to get from the API, like the currency the user was coming from and the currency they wanted to convert to, I was able to fully integrate the API using PHP. I also had to learn to use Apache Web Server to debug and test my project during the development process as my previous experience has been mostly with command line applications. 
 
-```html
-<button onclick="callRequestConversion()" type="submit">Convert</button>
-```
-
-```css
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 0 10px;
-    background: #2175dc;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
-}
-```
-
-```js
-function loadFlag(element){
-    for(code in country_list){
-        if(code == element.value){
-            let imgTag = element.parentElement.querySelector("img");
-            imgTag.src = `https://hatscripts.github.io/circle-flags/flags/${country_list[code].toLowerCase()}.svg`;
-            console.log(country_list[code].toLowerCase());
-        }
-    }
-}
-```
 
 ### Continued Development
 
