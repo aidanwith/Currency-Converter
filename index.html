@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>Currency Converter</header>
+            <form action="#" onsubmit="callRequestConversion()">
+                <div id="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" id="amount__input" value="1">
+                </div>
+                <div class="drop-down__list">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select__box">
+                            <img src="https://hatscripts.github.io/circle-flags/flags/us.svg" alt="us-flag" width="64">
+                            <select></select>
+                        </div>
+                    </div>
+                    <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select__box">
+                            <img src="https://hatscripts.github.io/circle-flags/flags/eu.svg" alt="eu-flag" width="64">
+                            <select></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="amount__conversion">
+                    <p>Conversion</p>
+                    <input type="readonly" class="convert__field" id='field2'>
+                <div class="exchange__rate"></div>
+                <button onclick="callRequestConversion()" type="submit">Convert</button>
+            </form>
+        </div>
+        <script>
+            function callRequestConversion() {
+                var returnedVal = '';
+
+                jQuery.ajax({
+                    type: "POST",
+                    url: 'index.php',
+                    dataType: 'json',
+
+                    success: function(obj, data) {
+                        if(!('error' in obj)) {
+                            console.log(obj);
+                            var to = document.getElementsByClassName('currency__code__option__to');
+                            var selected = null;
+                            Array.prototype.forEach.call(to, function(el) {
+                                if(el.selected) {
+                                    selected = el.value;
+                                }
+                            });
+                            to = obj["conversion_rates"][selected];
+                            console.log(to);
+                            var from = document.getElementsByClassName('currency__code__option__from');
+                            Array.prototype.forEach.call(from, function(el) {
+                                if(el.selected) {
+                                    selected = el.value;
+                                }
+                            });
+                            from = obj["conversion_rates"][selected];
+                            console.log(from);
+                            let amount = document.getElementById('amount__input');
+                            if(amount != null) {
+                                let amountVal = amount.value;
+                                let totalExchangeRate = (amountVal * to/from).toFixed(2);
+                                document.getElementById('field2').value = totalExchangeRate;
+                            }
+                            
+
+                        } else {
+                            console.log(obj.error);
+                        }
+                    }
+                });
+                return true;
+            }
+        </script>
+        <script src="./country.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
