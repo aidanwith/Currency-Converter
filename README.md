@@ -33,10 +33,10 @@ Currency Converter uses [ExchangeRate-API](https://exchangerate-api.com) to upda
 
 ### Links
 
-- Live Site URL: [https://insertlinkhere/](https://insertlinkhere/)
+- Live Site URL: [https://converter.run/](https://converter.run/)
 
 ### The Challenge
-The main challenge I had with this project was configuring the API to seamlessly integrate with the other elements of the project. Once I developed the initial version of the converter with HTML, CSS, and JavaScript I realised that my API key would be available for everyone on the internet to see. I knew that I needed to obfuscate my API key to ensure that sensitive information would be kept out of the eyes of those looking to take advantage. I was stuck between Django, Node.js, and PHP as potential solutions to ensure the security of the converter. I chose to work in PHP as I wanted to get more exposure to a very common server-side language present in many real-world applications. 
+The main challenge I had with this project was configuring the API to seamlessly integrate with the other elements of the project. Once I developed the initial version of the converter with HTML, CSS, and JavaScript I realised that my API key would be available for everyone on the internet to see. I knew that I needed to obfuscate my API key to ensure that sensitive information would be kept out of the eyes of those looking to take advantage. I was stuck between Django, Node.js, and PHP as potential solutions to ensure the security of the converter. I chose to work in PHP as I wanted to get more exposure to a very common server-side language present in many real-world applications. The site is run on a Digital Ocean server using Docker.
 
 ## My process
 
